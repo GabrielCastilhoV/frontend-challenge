@@ -16,26 +16,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p, h1, h2, h3 {
-    color: ${({ theme }) => theme.text}
+    color: ${({ theme }) => theme.gray250}
   }
 
   p {
     font-size: 1.25rem;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
 
   a {
     text-decoration: none;
@@ -57,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, select, button {
-    font: 400 1rem "Arial", sans-serif;
+    font: 400 1rem "Inter", sans-serif;
   }
 
   @media (max-width: 1080px) {
