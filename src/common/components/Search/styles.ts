@@ -24,6 +24,7 @@ export const Input = styled.input`
   width: 100%;
   background: transparent;
   font-weight: 500;
+  padding-left: 10px;
 
   &::placeholder {
     color: #54565a;

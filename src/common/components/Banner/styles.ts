@@ -1,0 +1,31 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  background-image: url('../../../../../Oval.png');
+  background-repeat: no-repeat;
+  background-position: right 10px;
+
+  padding-left: 1.2rem;
+
+  .cards {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+  }
+`;
+
+export const Header = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  p {
+    color: ${({ theme }) => theme.gray250};
+    font-weight: 600;
+  }
+
+  a {
+    color: #4abdf1;
+  }
+`;
