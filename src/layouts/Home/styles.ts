@@ -8,11 +8,14 @@ export const Content = styled.div`
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
-  padding: 3.12rem 2rem;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+`;
+
+export const Header = styled.header`
+  padding: 3.12rem 1.2rem 1.8rem;
 `;
 
 export const Title = styled.h1`
