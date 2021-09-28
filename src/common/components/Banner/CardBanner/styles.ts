@@ -48,7 +48,8 @@ export const Container = styled.div`
 export const Left = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+
   h2,
   p {
     color: #eee;
@@ -68,7 +69,7 @@ export const Left = styled.div`
     align-items: center;
     justify-content: center;
     gap: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
 
     p {
       font-size: 12px;
