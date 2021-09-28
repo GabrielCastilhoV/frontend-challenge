@@ -1,17 +1,11 @@
-import { Container, Header } from './styles';
+import { Container } from './styles';
 import { CardBanner } from './CardBanner';
-
-import Link from 'next/link';
+import { HeaderBook } from '../HeaderBook';
 
 export const Banner = () => {
   return (
     <Container>
-      <Header>
-        <p>Discover new book</p>
-        <Link href="/">
-          <a>More</a>
-        </Link>
-      </Header>
+      <HeaderBook title="Discover new book" nameLink="More" url="/" />
 
       <div className="cards">
         <CardBanner />

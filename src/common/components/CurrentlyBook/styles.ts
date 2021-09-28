@@ -4,22 +4,9 @@ export const Container = styled.div`
   padding-top: 30px;
   position: relative;
   z-index: 5;
-`;
 
-export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-bottom: 25px;
-
-  p {
-    color: ${({ theme }) => theme.gray250};
-    font-weight: 600;
-  }
-
-  a {
-    color: #4abdf1;
+  .header {
+    padding-left: 20px;
   }
 `;
 
@@ -67,14 +54,14 @@ export const Right = styled.div`
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 
   h2 {
     font-size: 20px;
     letter-spacing: 2px;
   }
 
-  p {
+  > p {
     font-size: 10px;
     color: #74776d;
     padding-top: 5px;
@@ -84,6 +71,17 @@ export const Right = styled.div`
     display: flex;
     align-items: center;
     padding-top: 10px;
+
+    p {
+      font-size: 10px;
+      color: #2a2b26;
+      padding-left: 5px;
+    }
+
+    span {
+      font-weight: 700;
+      color: #ff6978;
+    }
 
     svg {
       color: #9013fe;

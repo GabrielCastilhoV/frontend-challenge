@@ -1,8 +1,9 @@
-import { Container, Content, Left, Header, Right } from './styles';
+import { Container, Content, Left, Right } from './styles';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { BiBook } from 'react-icons/bi';
+
+import { HeaderBook } from '../HeaderBook';
 
 import book2 from '../../../../public/images/Book2.jpg';
 import rectangle from '../../../../public/images/Rectangle.svg';
@@ -12,12 +13,9 @@ import ovalFull from '../../../../public/images/OvalFull.png';
 export const CurrentlyBook = () => {
   return (
     <Container>
-      <Header>
-        <p>Currently Reading</p>
-        <Link href="/">
-          <a>All</a>
-        </Link>
-      </Header>
+      <div className="header">
+        <HeaderBook title="Currently Reading" nameLink="All" url="/" />
+      </div>
 
       <Content>
         <figure className="rectangle">
