@@ -5,7 +5,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  max-width: 1400px;
+  max-width: 768px;
   height: 100%;
   margin: 0 auto;
 
