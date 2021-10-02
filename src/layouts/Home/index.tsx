@@ -1,25 +1,39 @@
 import { Container, Content, Header, Title } from './styles';
 
-import { Search } from '@/common/components/Search';
+import { SearchBook } from '@/common/components/SearchBook';
 import { Banner } from '@/common/components/Banner';
 import { CurrentlyBook } from '@/common/components/CurrentlyBook';
 import { VideoBanner } from '@/common/components/VideoBanner';
 import { NavBar } from '@/common/modules/NavBar';
+import { SearchedElement } from '@/layouts/SearchedElement';
+
+import { useBooks } from '@/contexts/BooksContexts';
 
 export const Home = () => {
+  const { debouncedInput } = useBooks();
+
   return (
     <Container>
       <Content>
-        <Header>
-          <Search />
-          <Title>
-            Hi, <span>Mehmed Al Fatih</span> 👋
-          </Title>
-        </Header>
+        <SearchBook />
+        {debouncedInput !== '' ? (
+          <>
+            <SearchedElement />
+          </>
+        ) : (
+          <>
+            <Header>
+              <Title>
+                Hi, <span>Mehmed Al Fatih</span> 👋
+              </Title>
+            </Header>
 
-        <Banner />
-        <CurrentlyBook />
-        <VideoBanner />
+            <Banner />
+            <CurrentlyBook />
+            <VideoBanner />
+          </>
+        )}
+
         <NavBar />
       </Content>
     </Container>
