@@ -10,6 +10,5 @@ export const Container = styled.div`
   .cards {
     width: 100%;
     display: flex;
-    overflow: auto;
   }
 `;

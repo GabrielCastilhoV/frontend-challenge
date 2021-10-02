@@ -10,7 +10,7 @@ export const NavBar = () => {
         <ActiveLink activeClassName="active" href="/">
           <a>
             <FiHome />
-            Início
+            Home
           </a>
         </ActiveLink>
 

@@ -15,7 +15,7 @@ export const Content = styled.div`
 `;
 
 export const Header = styled.header`
-  padding: 3.12rem 1.2rem 1.8rem;
+  padding: 2rem 1.2rem 1.8rem;
 `;
 
 export const Title = styled.h1`
