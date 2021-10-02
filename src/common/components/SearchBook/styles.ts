@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.label`
+export const Container = styled.div`
+  padding: 3.15rem 1.2rem 0;
+`;
+
+export const Label = styled.label`
   width: 100%;
   height: 48px;
 
