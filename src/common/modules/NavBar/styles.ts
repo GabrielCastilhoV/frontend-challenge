@@ -4,7 +4,6 @@ export const Container = styled.div`
   position: fixed;
   bottom: 0;
   z-index: 5;
-  background: #fff;
 
   width: 100%;
   height: 65px;
@@ -12,9 +11,15 @@ export const Container = styled.div`
 
 export const Content = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px 50px;
+  max-width: 768px;
+  background: #fff;
+
+  @media screen and (max-width: 500px) {
+    justify-content: space-between;
+  }
 
   a {
     display: flex;
