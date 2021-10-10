@@ -12,6 +12,8 @@ import oval from '../../../public/images/Oval.svg';
 import bigOval from '../../../public/images/big-oval-right.png';
 import { useRouter } from 'next/router';
 
+import { OptionBar } from '@/common/components/OptionBar';
+
 type ImageLinks = {
   smallThumbnail: string;
   thumbnail: string;
@@ -76,6 +78,8 @@ export const BookSelected = ({ book }: BooksProps) => {
           <p>{book.volumeInfo.description}</p>
         </BookDetails>
       </Content>
+
+      <OptionBar />
     </Container>
   );
 };
