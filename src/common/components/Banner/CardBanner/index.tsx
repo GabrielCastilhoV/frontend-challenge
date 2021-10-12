@@ -10,9 +10,23 @@ import rectangle from '../../../../../public/images/Rectangle.svg';
 import oval from '../../../../../public/images/Oval.svg';
 import triangle from '../../../../../public/images/Triangle.svg';
 
-export const CardBanner = () => {
+interface CardBannerProps {
+  bg: string;
+  title: string;
+  author: string;
+  number: number;
+  titleIsBig?: boolean;
+}
+
+export const CardBanner = ({
+  bg,
+  title,
+  author,
+  number,
+  titleIsBig = false,
+}: CardBannerProps) => {
   return (
-    <Container>
+    <Container bg_color={bg}>
       <figure className="rectangle">
         <Image src={rectangle} alt="Rectangle" />
       </figure>
@@ -25,14 +39,14 @@ export const CardBanner = () => {
         <Image src={triangle} alt="Triangle" />
       </figure>
 
-      <Left>
-        <h2>Hooked</h2>
-        <p>Nir Eyal</p>
+      <Left titleIsBig={titleIsBig}>
+        <h2>{title}</h2>
+        <p>{author}</p>
 
         <div className="readNow">
           <BiBarChartSquare />
           <p>
-            <span>120+</span> Read Now
+            <span>{number}+</span> Read Now
           </p>
         </div>
       </Left>

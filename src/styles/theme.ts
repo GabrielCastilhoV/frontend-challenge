@@ -7,6 +7,8 @@ const theme = {
   gray250: '#3F4043',
 
   pink300: '#FF6978',
+  blue700: '#00173d',
+  purple700: '#451475',
 };
 
 export default theme;

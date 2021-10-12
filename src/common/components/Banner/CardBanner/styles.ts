@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  bg_color: string;
+}
+
+interface LeftProps {
+  titleIsBig: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
   width: 272px;
   padding: 15px 20px;
 
-  background: #00173d;
+  background: ${props => props.bg_color};
   box-shadow: 2px 4px 48px rgba(154, 175, 209, 0.62134);
   border-radius: 5px;
 
@@ -45,7 +53,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Left = styled.div`
+export const Left = styled.div<LeftProps>`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -58,6 +66,7 @@ export const Left = styled.div`
   h2 {
     font-weight: 700;
     letter-spacing: 2px;
+    font-size: ${props => (props.titleIsBig ? '1rem' : '2rem')};
   }
 
   > p {
