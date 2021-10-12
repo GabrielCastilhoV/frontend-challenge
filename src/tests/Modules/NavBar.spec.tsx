@@ -11,7 +11,7 @@ jest.mock('next/router', () => {
   };
 });
 
-describe('ActiveLink component', () => {
+describe('NavBar Module', () => {
   it('renders correctly', () => {
     render(<NavBar />);
 
